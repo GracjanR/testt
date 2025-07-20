@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAPITA</title>
+    <link rel="shortcut icon" href="./LOGO.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Source+Code+Pro:wght@400;600&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-wrapper">
+        <div class="bg-image"></div>
+    </div>
+    <nav>
+        <div class="hamburger-menu" id="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="nav-links-wrapper" id="mobile-menu">
+            <div class="nav-links">
+                <a href="./index.html" class="nav-link" data-page="home">Strona Główna</a>
+                <a href="./proces.html" class="nav-link" data-page="process">Proces Współpracy</a>
+                <a href="./kontakt.html" class="nav-link" data-page="contact">Kontakt</a>
+            </div>
+        </div>
+    </nav>
+    <div id="process" class="page active">
+        <div class="page-header">
+            <div class="name animate">Gracjan</div>
+            <div class="surname animate" style="animation-delay: 0.1s">Rapita</div>
+            <div class="title animate" style="animation-delay: 0.2s">Software Developer</div>
+        </div>
+        <h2 class="section-title animate">Oferowane Usługi</h2>
+        <div class="services-grid">
+            <div class="service-card animate" style="animation-delay: 0.2s">
+                <h3>Responsywne strony internetowe</h3>
+                <p>Nowoczesne projekty dostosowane do wszystkich urządzeń.</p>
+            </div>
+            <div class="service-card animate" style="animation-delay: 0.4s">
+                <h3>Sklepy internetowe (E-commerce)</h3>
+                <p>Kompletne rozwiązania dla Twojego biznesu online.</p>
+            </div>
+            <div class="service-card animate" style="animation-delay: 0.6s">
+                <h3>Zarządzanie aplikacjami webowymi</h3>
+                <p>Pełne wsparcie techniczne i aktualizacje.</p>
+            </div>
+            <div class="service-card animate" style="animation-delay: 0.2s">
+                <h3>Integracje systemów i API</h3>
+                <p>Połączenie różnych platform w spójną całość.</p>
+            </div>
+            <div class="service-card animate" style="animation-delay: 0.4s">
+                <h3>Zarządzanie bazami danych</h3>
+                <p>Optymalizacja i bezpieczeństwo Twoich danych.</p>
+            </div>
+            <div class="service-card animate" style="animation-delay: 0.6s">
+                <h3>Konsultacje techniczne</h3>
+                <p>Eksperckie doradztwo dla Twojego projektu.</p>
+            </div>
+        </div>
+        <h2 class="section-title animate" style="animation-delay: 0.2s">Proces Współpracy</h2>
+        <div class="timeline">
+            <div class="timeline-step animate" style="animation-delay: 0.3s">
+                <div class="step-number">1</div>
+                <h3>Konsultacja i Analiza Potrzeb</h3>
+                <p>Rozpoczynamy od dogłębnej rozmowy, aby poznać Twoje cele i wizję projektu. Analizujemy rynek i grupę docelową.</p>
+            </div>
+            <div class="timeline-step animate" style="animation-delay: 0.4s">
+                <div class="step-number">2</div>
+                <h3>Planowanie i Projektowanie (UI/UX)</h3>
+                <p>Na podstawie zebranych informacji tworzymy szczegółowy plan, makietę i prototypy interfejsu użytkownika.</p>
+            </div>
+            <div class="timeline-step animate" style="animation-delay: 0.5s">
+                <div class="step-number">3</div>
+                <h3>Rozwój i Implementacja</h3>
+                <p>Przystępujemy do kodowania, wykorzystując najnowsze technologie i sprawdzone praktyki programistyczne.</p>
+            </div>
+            <div class="timeline-step animate" style="animation-delay: 0.6s">
+                <div class="step-number">4</div>
+                <h3>Testowanie i Optymalizacja</h3>
+                <p>Przeprowadzamy gruntowne testy funkcjonalności, wydajności i bezpieczeństwa. Optymalizujemy rozwiązanie.</p>
+            </div>
+            <div class="timeline-step animate" style="animation-delay: 0.7s">
+                <div class="step-number">5</div>
+                <h3>Wdrożenie i Wsparcie</h3>
+                <p>Po zatwierdzeniu projektu wdrażamy go i zapewniamy pełne wsparcie techniczne po uruchomieniu.</p>
+            </div>
+        </div>
+    </div>
+    <div class="cta-section">
+        <h2 class="section-title animate" style="margin-bottom: 25px; animation-delay:0.1s;">Gotowy na współpracę?</h2>
+        <a href="kontakt.html" class="contact-cta-btn animate" style="animation-delay:0.2s;">KONTAKT</a>
+    </div>
+    <style>
+    .cta-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 60px 0 0 0;
+        width: 100%;
+    }
+    .contact-cta-btn {
+        background: transparent;
+        color: var(--primary-color);
+        padding: 12px 32px;
+        margin-top: 18px;
+        font-size: 1.15rem;
+        font-weight: bold;
+        border-radius: 50px;
+        border: 2px solid var(--primary-color);
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        letter-spacing: 1.2px;
+        box-shadow: 0 0 10px 0 rgba(30,144,255,0.10);
+        transition: background 0.3s, color 0.3s, box-shadow 0.3s, border 0.3s;
+        text-decoration: none;
+    }
+    .contact-cta-btn span {
+        position: relative;
+        z-index: 2;
+    }
+    .contact-cta-btn::after {
+        content: '\2192';
+        margin-left: 10px;
+        font-size: 1.1em;
+        transition: transform 0.3s;
+    }
+    .contact-cta-btn:hover {
+        background: var(--primary-color);
+        color: #fff;
+        border-color: var(--primary-color);
+        box-shadow: 0 0 18px 0 rgba(30,144,255,0.18);
+        text-decoration: none;
+    }
+    .contact-cta-btn:hover::after {
+        transform: translateX(5px);
+    }
+    @media (max-width: 600px) {
+      .cta-section {
+        margin: 40px 0 0 0;
+      }
+      .contact-cta-btn {
+        padding: 12px 18px;
+        font-size: 1rem;
+        min-width: 120px;
+      }
+    }
+    </style>
+    <footer>
+        <p class="copyright">© <span id="year"></span> Gracjan Rapita. Wszelkie prawa do treści zastrzeżone.</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="cursor-shadow.js"></script>
+    <script src="spa.js"></script>
+    <script>
+    // Ustawianie aktualnego roku w stopce
+    document.addEventListener('DOMContentLoaded', function() {
+        var yearSpan = document.getElementById('year');
+        if (yearSpan) {
+            yearSpan.textContent = new Date().getFullYear();
+        }
+    });
+    </script>
+</body>
+</html>

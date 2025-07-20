@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAPITA</title>
+    <link rel="shortcut icon" href="./LOGO.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Source+Code+Pro:wght@400;600&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-wrapper">
+        <div class="bg-image"></div>
+    </div>
+    <nav>
+        <div class="hamburger-menu" id="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="nav-links-wrapper" id="mobile-menu">
+            <div class="nav-links">
+                <a href="./index.html" class="nav-link" data-page="home">Strona Główna</a>
+                <a href="./proces.html" class="nav-link" data-page="process">Proces Współpracy</a>
+                <a href="./kontakt.html" class="nav-link" data-page="contact">Kontakt</a>
+            </div>
+        </div>
+    </nav>
+    <div id="contact" class="page active">
+        <div class="page-header">
+            <div class="name animate">Gracjan</div>
+            <div class="surname animate" style="animation-delay: 0.1s">Rapita</div>
+            <div class="title animate" style="animation-delay: 0.2s">Software Developer</div>
+        </div>
+        <div class="contact-form-container animate" style="animation-delay: 0.3s">
+            <h2>Skontaktuj się ze mną</h2>
+            <p class="contact-email">
+                lub napisz bezpośrednio na:
+                <a href="mailto:rapitagracjan@gmail.com">rapitagracjan@gmail.com</a>
+            </p>
+            <form id="contactForm" action="https://formspree.io/f/mwpqvlpa" method="POST">
+                <div class="contact-form-group">
+                    <input type="text" id="name" name="name" class="contact-form-input" placeholder="Imię i nazwisko" required>
+                </div>
+                <div class="contact-form-group">
+                    <input type="email" id="email" name="email" class="contact-form-input" placeholder="Email" required>
+                </div>
+                <div class="contact-form-group">
+                    <input type="text" id="subject" name="subject" class="contact-form-input" placeholder="Temat" required>
+                </div>
+                <div class="contact-form-group">
+                    <textarea id="message" name="message" class="contact-form-input" placeholder="Wiadomość" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Wyślij wiadomość</button>
+            </form>
+        </div>
+    </div>
+    
+    <footer>
+        <p class="copyright">© <span id="year"></span> Gracjan Rapita. Wszelkie prawa do treści zastrzeżone.</p>
+    </footer>
+    <script src="cursor-shadow.js"></script>
+    <script src="spa.js"></script>
+    <script src="script.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var yearSpan = document.getElementById('year');
+        if (yearSpan) {
+            yearSpan.textContent = new Date().getFullYear();
+        }
+    });
+    </script>
+</body>
+</html>
